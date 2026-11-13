@@ -1,0 +1,30 @@
+name: H1 - tendência no índice
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "hipoteses/h1_tendencia_indice.py"
+      - ".github/workflows/h1.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  h1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pandas numpy requests yfinance
+      - name: Rodar H1
+        run: python hipoteses/h1_tendencia_indice.py
+      - name: Gravar relatório no branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add relatorios/h1_tendencia_indice.md
+          git diff --cached --quiet || (git commit -m "Relatório H1 (gerado pelo Actions)" && git push)
