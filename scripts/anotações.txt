@@ -1,0 +1,22 @@
+CSNA3
+
+JANELA DE VALIDAÇÃO 90 DIAS
+
+Relatório de Validação (threshold = 0.98):
+              precision    recall  f1-score   support
+
+         0.0       0.61      0.90      0.73        48
+         1.0       0.75      0.36      0.48        42
+
+    accuracy                           0.64        90
+   macro avg       0.68      0.63      0.61        90
+weighted avg       0.68      0.64      0.61        90
+
+Acurácia: 0.6444444444444445
+Precisão (classe 1): 0.75
+Recall (classe 1): 0.35714285714285715
+
+
+8 pontos de compra em 90 dias
+
+

@@ -1,0 +1,81 @@
+ticker,estrategia,data_entrada,data_saida,dias,preco_entrada,preco_saida,retorno_%,resultado,alerta,alerta_completo
+PRIO3.SA,momentum_relativo,2025-06-03,2025-06-10,5,40.95,43.0,5.0,alvo,✅ OPERAR,✅ OPERAR
+PRIO3.SA,momentum_relativo,2025-06-11,2025-06-13,2,43.31,45.48,5.0,alvo,✅ OPERAR,✅ OPERAR
+PRIO3.SA,momentum_relativo,2025-06-16,2025-06-24,5,43.18,41.45,-4.0,stop,✅ OPERAR,✅ OPERAR
+PRIO3.SA,momentum_relativo,2025-11-13,2025-11-25,7,39.83,38.24,-4.0,stop,✅ OPERAR,✅ OPERAR (Tendência fraca)
+PRIO3.SA,momentum_relativo,2026-01-12,2026-01-20,6,43.24,45.4,5.0,alvo,✅ OPERAR,✅ OPERAR (Tendência fraca)
+PRIO3.SA,momentum_relativo,2026-01-22,2026-01-23,1,46.25,48.56,5.0,alvo,✅ OPERAR,✅ OPERAR
+VALE3.SA,momentum_relativo,2025-07-23,2025-07-28,3,57.42,55.12,-4.0,stop,❌ EVITAR,"❌ EVITAR (Volume baixo, Tendência fraca)"
+VALE3.SA,momentum_relativo,2025-09-16,2025-10-14,20,57.7,59.75,3.55,tempo,✅ OPERAR,✅ OPERAR (Tendência fraca)
+VALE3.SA,momentum_relativo,2025-10-15,2025-10-30,11,60.86,63.9,5.0,alvo,✅ OPERAR,✅ OPERAR
+VALE3.SA,momentum_relativo,2025-11-26,2025-12-03,5,66.58,69.91,5.0,alvo,✅ OPERAR,✅ OPERAR
+VALE3.SA,momentum_relativo,2025-12-05,2025-12-29,14,70.22,73.73,5.0,alvo,✅ OPERAR,✅ OPERAR
+VALE3.SA,momentum_relativo,2025-12-30,2026-01-06,3,71.96,75.56,5.0,alvo,✅ OPERAR,✅ OPERAR (Volume baixo)
+VALE3.SA,momentum_relativo,2026-01-08,2026-01-15,5,75.58,79.36,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+VALE3.SA,momentum_relativo,2026-01-19,2026-01-21,2,78.57,82.5,5.0,alvo,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+VALE3.SA,momentum_relativo,2026-01-26,2026-01-28,2,83.07,87.22,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+VALE3.SA,momentum_relativo,2026-02-02,2026-02-04,2,84.82,89.06,5.0,alvo,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+VALE3.SA,momentum_relativo,2026-02-06,2026-02-11,3,85.63,89.91,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+GGBR4.SA,momentum_relativo,2025-10-14,2025-10-28,10,17.71,18.6,5.0,alvo,✅ OPERAR,✅ OPERAR (Tendência fraca)
+GGBR4.SA,momentum_relativo,2025-10-30,2025-11-28,20,18.72,19.04,1.71,tempo,✅ OPERAR,✅ OPERAR
+GGBR4.SA,momentum_relativo,2025-12-03,2025-12-16,9,19.63,20.61,5.0,alvo,✅ OPERAR,✅ OPERAR
+GGBR4.SA,momentum_relativo,2025-12-17,2026-01-07,11,20.31,21.33,5.0,alvo,✅ OPERAR,✅ OPERAR
+GGBR4.SA,momentum_relativo,2026-01-08,2026-01-14,4,21.2,22.26,5.0,alvo,✅ OPERAR,✅ OPERAR
+GGBR4.SA,momentum_relativo,2026-01-16,2026-01-22,4,22.04,23.14,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+GGBR4.SA,momentum_relativo,2026-01-26,2026-01-28,2,22.73,23.87,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+MGLU3.SA,momentum_relativo,2025-09-04,2025-09-05,1,8.24,8.65,5.0,alvo,✅ OPERAR,✅ OPERAR
+MGLU3.SA,momentum_relativo,2025-09-08,2025-09-10,2,8.49,8.91,5.0,alvo,✅ OPERAR,✅ OPERAR
+MGLU3.SA,momentum_relativo,2025-09-12,2025-09-15,1,9.38,9.85,5.0,alvo,✅ OPERAR,✅ OPERAR
+MGLU3.SA,momentum_relativo,2025-09-22,2025-09-23,1,10.32,10.84,5.0,alvo,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+MGLU3.SA,momentum_relativo,2025-12-01,2025-12-03,2,9.85,10.34,5.0,alvo,❌ EVITAR,"❌ EVITAR (Volume baixo, Tendência fraca)"
+MGLU3.SA,momentum_relativo,2025-12-05,2025-12-09,2,10.01,9.61,-4.0,stop,✅ OPERAR,✅ OPERAR
+MGLU3.SA,momentum_relativo,2026-02-09,2026-02-12,3,10.97,10.53,-4.0,stop,❌ EVITAR,"❌ EVITAR (Preço esticado, Tendência fraca)"
+CYRE3.SA,momentum_relativo,2025-04-09,2025-04-22,7,24.84,26.08,5.0,alvo,✅ OPERAR,✅ OPERAR
+CYRE3.SA,momentum_relativo,2025-04-23,2025-04-28,3,25.87,24.84,-4.0,stop,✅ OPERAR,✅ OPERAR
+CYRE3.SA,momentum_relativo,2025-09-05,2025-09-11,4,28.83,30.27,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+CYRE3.SA,momentum_relativo,2025-09-12,2025-09-16,2,30.34,31.86,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+CYRE3.SA,momentum_relativo,2025-09-29,2025-10-07,6,30.64,29.41,-4.0,stop,✅ OPERAR,✅ OPERAR (Preço esticado)
+CYRE3.SA,momentum_relativo,2025-11-17,2025-12-01,9,34.3,36.01,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+CYRE3.SA,momentum_relativo,2026-01-30,2026-02-03,2,29.9,31.39,5.0,alvo,✅ OPERAR,✅ OPERAR
+MRFG3.SA,momentum_relativo,2025-04-09,2025-04-14,3,19.61,20.59,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+MRFG3.SA,momentum_relativo,2025-04-15,2025-04-22,3,20.15,21.16,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+MRFG3.SA,momentum_relativo,2025-04-24,2025-04-25,1,21.07,22.12,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+MRFG3.SA,momentum_relativo,2025-04-28,2025-05-02,3,21.93,21.05,-4.0,stop,✅ OPERAR,✅ OPERAR (Preço esticado)
+MRFG3.SA,momentum_relativo,2025-05-19,2025-05-20,1,23.46,24.63,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+MRFG3.SA,momentum_relativo,2025-05-21,2025-05-30,7,24.62,25.85,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+MRFG3.SA,momentum_relativo,2025-06-02,2025-06-16,10,25.38,24.36,-4.0,stop,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+RADL3.SA,momentum_relativo,2025-10-03,2025-10-15,8,18.46,19.38,5.0,alvo,✅ OPERAR,✅ OPERAR
+RADL3.SA,momentum_relativo,2025-10-16,2025-11-03,12,19.15,20.1,5.0,alvo,✅ OPERAR,✅ OPERAR
+RADL3.SA,momentum_relativo,2025-11-05,2025-11-07,2,19.8,20.79,5.0,alvo,✅ OPERAR,✅ OPERAR
+RADL3.SA,momentum_relativo,2025-11-19,2025-12-04,10,22.75,23.88,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+RADL3.SA,momentum_relativo,2025-12-11,2025-12-16,3,24.19,23.22,-4.0,stop,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+RADL3.SA,momentum_relativo,2026-02-11,2026-02-12,1,27.0,25.92,-4.0,stop,❌ EVITAR,"❌ EVITAR (Preço esticado, Tendência fraca)"
+COGN3.SA,momentum_relativo,2025-04-09,2025-04-15,4,2.05,2.15,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+COGN3.SA,momentum_relativo,2025-04-16,2025-04-17,1,2.11,2.02,-4.0,stop,✅ OPERAR,✅ OPERAR (Preço esticado)
+COGN3.SA,momentum_relativo,2025-04-23,2025-04-24,1,2.17,2.28,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+COGN3.SA,momentum_relativo,2025-04-25,2025-04-29,2,2.27,2.39,5.0,alvo,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+COGN3.SA,momentum_relativo,2025-04-30,2025-05-05,2,2.35,2.46,5.0,alvo,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+COGN3.SA,momentum_relativo,2025-05-09,2025-05-15,4,2.7,2.84,5.0,alvo,✅ OPERAR,✅ OPERAR (Preço esticado)
+COGN3.SA,momentum_relativo,2025-05-19,2025-05-20,1,2.8,2.69,-4.0,stop,✅ OPERAR,✅ OPERAR (Preço esticado)
+COGN3.SA,momentum_relativo,2025-05-27,2025-06-02,4,2.63,2.76,5.0,alvo,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+COGN3.SA,momentum_relativo,2025-11-03,2025-11-07,4,3.38,3.25,-4.0,stop,❌ EVITAR,"❌ EVITAR (Preço esticado, Volume baixo)"
+COGN3.SA,momentum_relativo,2026-01-21,2026-01-22,1,4.05,4.25,5.0,alvo,❌ EVITAR,"❌ EVITAR (Preço esticado, Tendência fraca)"
+RENT3.SA,momentum_relativo,2025-04-11,2025-04-23,6,38.57,40.5,5.0,alvo,✅ OPERAR,✅ OPERAR
+RENT3.SA,momentum_relativo,2025-04-24,2025-04-28,2,41.6,43.68,5.0,alvo,✅ OPERAR,✅ OPERAR
+RENT3.SA,momentum_relativo,2025-04-30,2025-05-09,6,42.96,41.24,-4.0,stop,✅ OPERAR,✅ OPERAR
+RENT3.SA,momentum_relativo,2025-05-16,2025-05-21,3,41.84,40.17,-4.0,stop,✅ OPERAR,✅ OPERAR
+RENT3.SA,momentum_relativo,2025-09-15,2025-09-17,2,38.29,40.2,5.0,alvo,✅ OPERAR,✅ OPERAR (Tendência fraca)
+RENT3.SA,momentum_relativo,2025-09-18,2025-09-22,2,39.9,38.3,-4.0,stop,✅ OPERAR,✅ OPERAR
+RENT3.SA,momentum_relativo,2025-09-23,2025-10-02,7,40.59,38.97,-4.0,stop,✅ OPERAR,✅ OPERAR
+RENT3.SA,momentum_relativo,2025-11-06,2025-11-11,3,41.15,43.21,5.0,alvo,✅ OPERAR,✅ OPERAR (Tendência fraca)
+RENT3.SA,momentum_relativo,2025-11-12,2025-11-28,11,43.06,45.21,5.0,alvo,✅ OPERAR,✅ OPERAR
+RENT3.SA,momentum_relativo,2025-12-01,2025-12-03,2,45.4,47.67,5.0,alvo,✅ OPERAR,✅ OPERAR
+RENT3.SA,momentum_relativo,2025-12-05,2025-12-15,6,45.93,48.23,5.0,alvo,✅ OPERAR,✅ OPERAR
+VIVT3.SA,momentum_relativo,2025-04-28,2025-05-07,6,27.23,28.59,5.0,alvo,✅ OPERAR,✅ OPERAR (Tendência fraca)
+VIVT3.SA,momentum_relativo,2025-05-09,2025-06-02,16,28.04,29.44,5.0,alvo,✅ OPERAR,✅ OPERAR (Volume baixo)
+VIVT3.SA,momentum_relativo,2025-06-12,2025-06-30,11,29.75,31.24,5.0,alvo,✅ OPERAR,✅ OPERAR (Volume baixo)
+VIVT3.SA,momentum_relativo,2025-07-01,2025-07-29,20,31.26,30.55,-2.27,tempo,✅ OPERAR,✅ OPERAR (Volume baixo)
+VIVT3.SA,momentum_relativo,2025-08-13,2025-08-25,8,33.09,34.74,5.0,alvo,✅ OPERAR,✅ OPERAR (Tendência fraca)
+VIVT3.SA,momentum_relativo,2025-08-26,2025-09-10,11,34.45,33.07,-4.0,stop,✅ OPERAR,✅ OPERAR (Preço esticado)
+VIVT3.SA,momentum_relativo,2026-01-26,2026-02-05,8,37.0,38.85,5.0,alvo,✅ OPERAR,✅ OPERAR (Tendência fraca)
+VIVT3.SA,momentum_relativo,2026-02-06,2026-02-10,2,38.9,40.85,5.0,alvo,✅ OPERAR,✅ OPERAR

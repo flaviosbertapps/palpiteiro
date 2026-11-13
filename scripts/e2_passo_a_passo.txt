@@ -1,0 +1,23 @@
+Noite anterior ou Manhã cedo: Rode o seu script de Análise de Oportunidades (e2_daily_runner.py).
+
+    Resultado: Você recebe o e-mail e o arquivo ordens_pendentes.csv é criado.
+
+Abertura do Mercado: Você olha o robô, vai no Home Broker e coloca as ordens.
+
+Após o pregão (ou após a execução):
+
+    Abra o arquivo dados/ordens_pendentes.csv.
+
+    Delete as linhas das ações que você não conseguiu comprar.
+
+    Ajuste a coluna Preço_Ref com o preço médio real que a corretora te deu.
+
+    Ajuste o Stop_Loss se o seu preço de entrada foi muito diferente do sugerido.
+
+    Salve o arquivo.
+
+Confirmar: Rode o script python confirmar_execucao.py.
+
+    Resultado: O arquivo de pendentes some e o posicoes_abertas.csv é alimentado.
+
+Monitorar: Rode o seu script de Monitoramento (que vamos finalizar) para ver se algo atingiu o stop ou alvo.

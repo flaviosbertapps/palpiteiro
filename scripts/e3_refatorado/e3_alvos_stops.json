@@ -1,0 +1,31 @@
+{
+  "_comentario": "Configuração de alvos e stops para o screening.",
+  "_instrucoes": [
+    "modo: 'fixo' usa alvo_pct e stop_pct da estratégia.",
+    "      'grade' testa todas as combinações de alvos x stops abaixo.",
+    "      'atr'   usa multplicadores de ATR (requer chave atr_mult).",
+    "",
+    "Em modo 'grade', os parâmetros da estratégia são sobrescritos.",
+    "Use 'grade' para otimização. Use 'fixo' para operação real."
+  ],
+
+  "modo": "fixo",
+
+  "grade": {
+    "_uso": "Ativo somente se modo == 'grade'",
+    "alvos_pct":  [0.025, 0.03, 0.04, 0.05],
+    "stops_pct":  [0.025, 0.03, 0.04, 0.05],
+    "max_dias":   [10, 15, 20]
+  },
+
+  "atr_mult": {
+    "_uso": "Ativo somente se modo == 'atr'",
+    "stop_mult": 1.5,
+    "alvo_mult": 2.5
+  },
+
+  "custos_operacionais": {
+    "taxa_total_pct": 0.004,
+    "_comentario": "0.4% total (entrada + saída). Aplicado sobre cada trade."
+  }
+}

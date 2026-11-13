@@ -1,0 +1,7 @@
+alpha_papel_vs_ibov_mean
+atr_pct_ultimo
+close_norm_ultimo
+cmf_ultimo
+regime_tendencia
+regime_volatilidade
+retorno_acumulado_norm

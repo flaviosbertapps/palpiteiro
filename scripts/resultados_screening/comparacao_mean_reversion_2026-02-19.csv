@@ -1,0 +1,4 @@
+nivel,ops_ano,taxa_%,ret_ano_%,desvio_%,sharpe,melhor_%,pior_%,anos_pos/neg
+LIGHT,3.5,81.7,48.9,35.5,1.38,84.0,6.5,4/0
+SUPER-LIGHT,54.6,60.5,7.6,20.5,0.37,38.9,-16.8,3/2
+SUPER-LIGHT SEM REGIME,73.6,60.2,6.8,21.6,0.31,38.9,-17.9,3/2

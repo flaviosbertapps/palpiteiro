@@ -1,0 +1,20 @@
+{
+  "_comentario": "Lista de estratégias a testar no screening.",
+  "_instrucoes": [
+    "Adicione ou remova nomes de estratégias conforme necessário.",
+    "Cada nome deve corresponder a um arquivo em estrategias/<nome>.py",
+    "que exporte um dicionário ESTRATEGIA com as chaves: nome, descricao, parametros, fn_sinal."
+  ],
+
+  "estrategias_ativas": [
+    "mean_reversion_light",
+    "mean_reversion_super_light"
+    
+  ],
+
+  "estrategias_disponiveis": [
+    "mean_reversion_light",
+    "mean_reversion_super_light",    
+    "mean_reversion_mega_light"
+  ]
+}

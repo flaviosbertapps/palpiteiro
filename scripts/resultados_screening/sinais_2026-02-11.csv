@@ -1,0 +1,5 @@
+ticker,estrategia,data,close,alvo,stop,r:r,max_dias,rsi,adx,vol_rel,ret_5d_%,ret_20d_%,norm_mm200
+MGLU3.SA,momentum_relativo,2026-02-11,11.1,11.66,10.66,1:1.2,20,67.8,27.1,0.81,14.08,32.14,1.285
+CYRE3.SA,momentum_relativo,2026-02-11,31.28,32.84,30.03,1:1.2,20,61.8,28.1,0.65,2.52,25.52,1.108
+RADL3.SA,momentum_relativo,2026-02-11,27.0,28.35,25.92,1:1.2,20,66.2,26.0,0.86,5.51,11.11,1.44
+RENT3.SA,momentum_relativo,2026-02-11,51.09,53.64,49.05,1:1.2,20,70.8,29.0,0.93,2.06,21.88,1.249

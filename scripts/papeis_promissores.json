@@ -1,0 +1,222 @@
+{
+  "data_calibracao": "2026-02-12",
+  "criterios": {
+    "min_trades": 5,
+    "min_taxa_acerto": 0.6,
+    "min_retorno_medio": 0.015
+  },
+  "tickers": [
+    "PRIO3.SA",
+    "VALE3.SA",
+    "GGBR4.SA",
+    "MGLU3.SA",
+    "CYRE3.SA",
+    "MRFG3.SA",
+    "RADL3.SA",
+    "COGN3.SA",
+    "RENT3.SA",
+    "VIVT3.SA"
+  ],
+  "metricas": {
+    "ITUB4.SA": {
+      "n_trades": 5,
+      "taxa_acerto": 0.6,
+      "retorno_medio": 0.014
+    },
+    "BBDC4.SA": {
+      "n_trades": 11,
+      "taxa_acerto": 0.364,
+      "retorno_medio": -0.0073
+    },
+    "BBAS3.SA": {
+      "n_trades": 0
+    },
+    "SANB11.SA": {
+      "n_trades": 4,
+      "taxa_acerto": 0.0,
+      "retorno_medio": -0.04
+    },
+    "PETR4.SA": {
+      "n_trades": 2,
+      "taxa_acerto": 0.5,
+      "retorno_medio": 0.005
+    },
+    "PETR3.SA": {
+      "n_trades": 2,
+      "taxa_acerto": 1.0,
+      "retorno_medio": 0.05
+    },
+    "PRIO3.SA": {
+      "n_trades": 6,
+      "taxa_acerto": 0.667,
+      "retorno_medio": 0.02
+    },
+    "VALE3.SA": {
+      "n_trades": 11,
+      "taxa_acerto": 0.909,
+      "retorno_medio": 0.0418
+    },
+    "CSNA3.SA": {
+      "n_trades": 10,
+      "taxa_acerto": 0.4,
+      "retorno_medio": -0.004
+    },
+    "GGBR4.SA": {
+      "n_trades": 6,
+      "taxa_acerto": 1.0,
+      "retorno_medio": 0.05
+    },
+    "USIM5.SA": {
+      "n_trades": 6,
+      "taxa_acerto": 0.5,
+      "retorno_medio": 0.005
+    },
+    "MGLU3.SA": {
+      "n_trades": 7,
+      "taxa_acerto": 0.714,
+      "retorno_medio": 0.0243
+    },
+    "LREN3.SA": {
+      "n_trades": 6,
+      "taxa_acerto": 0.333,
+      "retorno_medio": -0.01
+    },
+    "ARZZ3.SA": {
+      "erro": "'close'"
+    },
+    "VIIA3.SA": {
+      "erro": "'close'"
+    },
+    "SOMA3.SA": {
+      "erro": "'close'"
+    },
+    "ELET3.SA": {
+      "n_trades": 2,
+      "taxa_acerto": 0.5,
+      "retorno_medio": 0.005
+    },
+    "ELET6.SA": {
+      "n_trades": 1,
+      "taxa_acerto": 0.0,
+      "retorno_medio": -0.04
+    },
+    "CMIG4.SA": {
+      "n_trades": 1,
+      "taxa_acerto": 0.0,
+      "retorno_medio": -0.04
+    },
+    "TAEE11.SA": {
+      "n_trades": 3,
+      "taxa_acerto": 0.333,
+      "retorno_medio": -0.0173
+    },
+    "CPFE3.SA": {
+      "n_trades": 5,
+      "taxa_acerto": 0.6,
+      "retorno_medio": 0.014
+    },
+    "CYRE3.SA": {
+      "n_trades": 7,
+      "taxa_acerto": 0.714,
+      "retorno_medio": 0.0243
+    },
+    "MRVE3.SA": {
+      "n_trades": 12,
+      "taxa_acerto": 0.583,
+      "retorno_medio": 0.0125
+    },
+    "SUZB3.SA": {
+      "n_trades": 1,
+      "taxa_acerto": 0.0,
+      "retorno_medio": -0.04
+    },
+    "CSAN3.SA": {
+      "n_trades": 2,
+      "taxa_acerto": 0.5,
+      "retorno_medio": 0.005
+    },
+    "BRFS3.SA": {
+      "n_trades": 0
+    },
+    "JBSS3.SA": {
+      "erro": "Valores extremos detectados em JBSS3.SA. Verifique os dados baixados."
+    },
+    "BEEF3.SA": {
+      "n_trades": 10,
+      "taxa_acerto": 0.6,
+      "retorno_medio": 0.014
+    },
+    "MRFG3.SA": {
+      "n_trades": 7,
+      "taxa_acerto": 0.714,
+      "retorno_medio": 0.0243
+    },
+    "RADL3.SA": {
+      "n_trades": 6,
+      "taxa_acerto": 0.667,
+      "retorno_medio": 0.02
+    },
+    "HAPV3.SA": {
+      "erro": "Valores extremos detectados em HAPV3.SA. Verifique os dados baixados."
+    },
+    "FLRY3.SA": {
+      "n_trades": 4,
+      "taxa_acerto": 0.25,
+      "retorno_medio": -0.0175
+    },
+    "COGN3.SA": {
+      "n_trades": 10,
+      "taxa_acerto": 0.7,
+      "retorno_medio": 0.023
+    },
+    "YDUQ3.SA": {
+      "n_trades": 7,
+      "taxa_acerto": 0.429,
+      "retorno_medio": -0.0014
+    },
+    "RAIL3.SA": {
+      "n_trades": 0
+    },
+    "RENT3.SA": {
+      "n_trades": 11,
+      "taxa_acerto": 0.636,
+      "retorno_medio": 0.0173
+    },
+    "TOTS3.SA": {
+      "n_trades": 4,
+      "taxa_acerto": 0.25,
+      "retorno_medio": -0.0175
+    },
+    "VIVT3.SA": {
+      "n_trades": 8,
+      "taxa_acerto": 0.875,
+      "retorno_medio": 0.0357
+    },
+    "WEGE3.SA": {
+      "n_trades": 5,
+      "taxa_acerto": 0.6,
+      "retorno_medio": 0.014
+    },
+    "WEG3.SA": {
+      "erro": "'close'"
+    },
+    "EMBR3.SA": {
+      "n_trades": 2,
+      "taxa_acerto": 0.5,
+      "retorno_medio": 0.005
+    },
+    "RAIZ4.SA": {
+      "n_trades": 0
+    },
+    "BBSE3.SA": {
+      "n_trades": 1,
+      "taxa_acerto": 0.0,
+      "retorno_medio": -0.04
+    },
+    "B3SA3.SA": {
+      "n_trades": 4,
+      "taxa_acerto": 0.5,
+      "retorno_medio": 0.005
+    }
+  }
+}

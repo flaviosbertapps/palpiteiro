@@ -1,0 +1,5 @@
+ticker,estrategia,data,close,alvo,stop,r:r,max_dias,qtd,valor_R$,pct_capital,rsi,adx,vol_rel,ret_5d_%,ret_20d_%,norm_mm200,classificacao
+PRIO3.SA,momentum_relativo,2026-02-12,52.23,54.84,50.14,1:1.2,25,956,49931.88,49.9,67.8,52.2,1.53,6.27,19.3,1.292,✅ OPERAR (Preço esticado)
+VALE3.SA,momentum_relativo,2026-02-12,89.23,93.69,85.66,1:1.2,25,560,49968.8,50.0,66.0,42.4,1.36,3.22,13.16,1.439,✅ OPERAR (Preço esticado)
+MGLU3.SA,momentum_relativo,2026-02-12,10.15,10.66,9.74,1:1.2,25,4878,49511.7,49.5,54.7,26.3,1.28,5.18,16.13,1.174,✅ OPERAR (Tendência fraca)
+RENT3.SA,momentum_relativo,2026-02-12,51.6,54.18,49.54,1:1.2,25,970,50052.0,50.1,72.3,29.6,1.06,3.06,22.92,1.261,✅ OPERAR (Preço esticado)

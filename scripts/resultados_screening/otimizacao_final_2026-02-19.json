@@ -1,0 +1,37 @@
+{
+  "vencedor": "FIXO",
+  "config": "3.0%/4.0%",
+  "sharpe": 1.38,
+  "taxa_%": 81.7,
+  "ret_ano_%": 48.9,
+  "melhor_fixo": {
+    "alvo/stop": "3.0%/4.0%",
+    "r:r": 0.75,
+    "ops_ano": 3.5,
+    "taxa_%": 81.7,
+    "ret_ano_%": 48.9,
+    "sharpe": 1.38,
+    "pior_%": 6.5,
+    "anos_pos/neg": "4/0"
+  },
+  "melhor_atr": {
+    "stop/alvo": "2.5\u00d7ATR/3.5\u00d7ATR",
+    "r:r": 1.4,
+    "ops_ano": 4.5,
+    "taxa_%": 36.9,
+    "ret_ano_%": -44.9,
+    "sharpe": -0.85,
+    "pior_%": -129.6,
+    "anos_pos/neg": "1/3"
+  },
+  "atual": {
+    "alvo/stop": "3.0%/4.0%",
+    "r:r": 0.75,
+    "ops_ano": 3.5,
+    "taxa_%": 81.7,
+    "ret_ano_%": 48.9,
+    "sharpe": 1.38,
+    "pior_%": 6.5,
+    "anos_pos/neg": "4/0"
+  }
+}
