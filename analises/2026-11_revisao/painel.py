@@ -1,5 +1,5 @@
 """
-Monta um painel OHLC ajustado por proventos a partir dos CSVs em scripts/temp/
+Monta um painel OHLC ajustado por proventos a partir dos CSVs em legado/temp/
 (20 papéis, 2020-01 a 2026-03, gerados pelo pipeline antigo em 2026-03-02).
 
 Ajuste: fator = adj_close / close aplicado a open/high/low/close.
@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 
 RAIZ = Path(__file__).resolve().parents[2]
-PASTA_TEMP = RAIZ / "scripts" / "temp"
+PASTA_TEMP = RAIZ / "legado" / "temp"
 
 
 def rsi_wilder(close: pd.Series, n: int = 14) -> pd.Series:

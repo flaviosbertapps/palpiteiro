@@ -1,6 +1,6 @@
 # Diagnóstico — o que foi feito, o que falhou e por quê
 
-Revisão de novembro/2026 de todo o conteúdo de `scripts/` (código, 35 notebooks, CSVs de resultado e o backup `e4_valor_holding_backup_20260414.zip`). Os números marcados com **[controle]** foram recalculados nesta revisão, com o código em `analises/2026-11_revisao/`; os demais vêm dos arquivos do próprio repositório.
+Revisão de novembro/2026 de todo o conteúdo de `legado/` (código, 35 notebooks, CSVs de resultado e o backup `e4_valor_holding_backup_20260414.zip`). Os números marcados com **[controle]** foram recalculados nesta revisão, com o código em `analises/2026-11_revisao/`; os demais vêm dos arquivos do próprio repositório.
 
 ## 1. Veredito
 
@@ -86,7 +86,7 @@ Além disso:
 - **Inconsistência não investigada.** `validacao_swing_liquido` mostra variantes de swing com 91% de acerto e Sharpe 6,6 em 26/02 e 38% de acerto e Sharpe negativo em 27/02. Um Sharpe de 6 deveria ter sido tratado como sintoma de erro no momento em que apareceu.
 - **Preços sem ajuste de proventos** em todo o E3. Uma data ex-provento vira "queda de 5 dias" e RSI baixo. Em `precos.db`, PETR4 fecha a 36,25 em 11/08/2022 e abre a 29,10 no dia seguinte; é provento, não queda. No recálculo com os 20 papéis disponíveis, um terço dos dias de sinal da LIGHT desaparece quando o preço é ajustado **[controle]**.
 
-**Replicação independente [controle].** LIGHT com preço ajustado e entrada na abertura seguinte, nos 20 papéis de `scripts/temp/`: 7 trades em 6 anos, 43% de acerto, −1,0% por trade antes de custos. Entradas aleatórias no mesmo regime têm média de −0,01%; o p-valor do teste de permutação é 0,80. O universo é menor que o original, então a comparação não é exata, mas a direção coincide com a última execução do próprio `e3_refatorado`.
+**Replicação independente [controle].** LIGHT com preço ajustado e entrada na abertura seguinte, nos 20 papéis de `legado/temp/`: 7 trades em 6 anos, 43% de acerto, −1,0% por trade antes de custos. Entradas aleatórias no mesmo regime têm média de −0,01%; o p-valor do teste de permutação é 0,80. O universo é menor que o original, então a comparação não é exata, mas a direção coincide com a última execução do próprio `e3_refatorado`.
 
 **As rejeições estavam certas.** Momentum, scoring, ATR e swing foram descartados corretamente, embora parte das explicações dadas ("ATR mede volatilidade, não direção") seja racionalização posterior: retornos de −150% ao ano são artefato da fórmula de anualização, não uma propriedade do ATR.
 
@@ -166,8 +166,8 @@ Limitações destes controles: 20 papéis escolhidos em 2026, 6 anos, sem impost
 
 ## 7. Higiene do repositório
 
-- **Senha de aplicativo do Gmail em texto puro** em `scripts/utils.py`, `scripts/e3_refatorado/utils.py`, `scripts/_palpiteiro.py` e dentro do zip. **Revogue essa senha na conta Google.** Apagar o arquivo não resolve: ela continua no histórico do Git.
-- Um virtualenv inteiro versionado em `scripts/agentes/` (1.487 dos 1.684 arquivos do repositório), além de `__pycache__`.
-- `scripts/temp/*.csv` salvos sem a coluna de data (o calendário foi reconstruído nesta revisão em `analises/2026-11_revisao/calendario.csv`).
+- **Senha de aplicativo do Gmail em texto puro** em `legado/utils.py`, `legado/e3_refatorado/utils.py`, `legado/_palpiteiro.py` e dentro do zip. **Revogue essa senha na conta Google.** Apagar o arquivo não resolve: ela continua no histórico do Git.
+- Um virtualenv inteiro versionado que estava em `scripts/agentes/` (removido do versionamento) (1.487 dos 1.684 arquivos do repositório), além de `__pycache__`.
+- `legado/temp/*.csv` salvos sem a coluna de data (o calendário foi reconstruído nesta revisão em `analises/2026-11_revisao/calendario.csv`).
 - Arquivos duplicados (`PETR4.ipynb` e `PETR4 copy.ipynb`; `preprocessamento.py` em dois lugares), arquivos vazios (`execucao_diaria.py`, `treino_modelo.py`), caminhos absolutos do Windows no código, bancos SQLite dentro de um zip de 5 MB.
 - Scripts de 7 a 8 mil linhas acumulando todas as variantes já testadas. Não é possível saber qual trecho gerou qual resultado.

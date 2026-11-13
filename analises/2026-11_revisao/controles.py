@@ -2,7 +2,7 @@
 Testes de controle da revisão de nov/2026.
 
 Objetivo: verificar com números as afirmações do diagnóstico (docs/01_diagnostico.md),
-usando apenas dados que já estavam no repositório (scripts/temp/*.csv).
+usando apenas dados que já estavam no repositório (legado/temp/*.csv).
 
   A. Quanto da "taxa de acerto" vem só da geometria alvo/stop (entradas sem sinal)?
   B. Mean Reversion LIGHT com execução honesta + teste de permutação.

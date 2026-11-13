@@ -91,7 +91,7 @@ palpiteiro/
 - **Motor testado.** O motor ganha testes automáticos antes de qualquer estratégia: uma estratégia que usa o preço de amanhã precisa ser barrada, e uma estratégia aleatória precisa dar zero menos custos. Os erros do passado foram quase todos no motor, não nas ideias.
 - **Reserva protegida por código.** `validar.py` só lê o período de reserva com uma opção explícita e grava o uso em `registro.csv`.
 - **Segredos.** E-mail e senha passam a ser *secrets* do GitHub. A senha atual precisa ser revogada (ver diagnóstico, seção 7).
-- **Legado.** `scripts/` vai para `legado/` sem o virtualenv, os `__pycache__` e os CSVs de `temp/`. Nada é apagado do histórico.
+- **Legado.** `legado/` vai para `legado/` sem o virtualenv, os `__pycache__` e os CSVs de `temp/`. Nada é apagado do histórico.
 
 ### 3.4 Formato de uma hipótese
 
@@ -145,7 +145,7 @@ A probabilidade indicada é a minha estimativa de que a hipótese sobreviva ao p
 
 | Etapa | Conteúdo | Critério de saída |
 |---|---|---|
-| **0. Higiene** | Revogar a senha do Gmail; mover `scripts/` para `legado/`; remover virtualenv e caches do versionamento | Repositório limpo, sem segredo ativo |
+| **0. Higiene** | Revogar a senha do Gmail; mover `legado/` para `legado/`; remover virtualenv e caches do versionamento | Repositório limpo, sem segredo ativo |
 | **1. Motor** | `dados`, `universo`, `motor`, `avaliacao`, testes do motor, workflow de validação | Estratégia aleatória dá zero menos custos; estratégia com lookahead é barrada; os controles A–E são reproduzidos em 100 papéis desde 2010 |
 | **2. Linhas de base** | Relatório único: CDI, Ibovespa, universo em pesos iguais, por ano | Régua publicada em `relatorios/000_base.md` |
 | **3. Hipóteses** | H1, H3, H2 (três variantes), nessa ordem; depois H4 | Cada uma com relatório e linha no registro |
@@ -162,4 +162,4 @@ As etapas 0 a 2 não dependem de nenhuma ideia dar certo e são onde está o mai
 4. **Frequência**: aceita uma rotina em que na maioria dos dias a instrução é "manter"?
 5. **Fonte de dados**: começar com yfinance e migrar depois, ou já investir no COTAHIST?
 6. **Rede do ambiente**: quer liberar Yahoo, B3 e Banco Central para esta sessão, ou fica tudo no Actions?
-7. **Legado**: posso reorganizar `scripts/` em `legado/` e tirar o virtualenv do versionamento?
+7. **Legado**: posso reorganizar `legado/` em `legado/` e tirar o virtualenv do versionamento?
