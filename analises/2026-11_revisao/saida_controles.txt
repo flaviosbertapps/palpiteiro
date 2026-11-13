@@ -1,0 +1,113 @@
+
+==============================================================================
+D. RÉGUA — o que ficar parado rendeu no mesmo período
+==============================================================================
+Período: 2020-01-03 a 2026-02-27 (6.2 anos)
+                                         ativo  CAGR_%  vol_anual_%  max_drawdown_%
+                  CDI (aprox. pela meta Selic)     9.6          0.3             0.0
+                     Ibovespa (sem dividendos)     8.0         24.2           -46.8
+Buy&hold 20 papéis, pesos iguais, c/ proventos     7.6         24.7           -41.4
+
+CDI por ano-calendário (aprox.):
+data
+2020     2.7
+2021     4.3
+2022    12.3
+2023    13.0
+2024    10.8
+2025    14.2
+2026     2.2
+
+Nota: o buy&hold do universo tem viés de sobrevivência (lista escolhida em 2026).
+
+==============================================================================
+A. ENTRADAS SEM SINAL (todo dia, todo papel) — o que a geometria alvo/stop entrega sozinha
+==============================================================================
+alvo stop  dias          filtro     n  acerto_%  bateu_alvo_%  ret_medio_bruto_%
+3.0% 4.0%    15   todos os dias 26554      58.0          56.4               0.09
+3.0% 4.0%    15 só Ibov > MM200 18314      56.3          54.6              -0.03
+3.0% 3.0%    15   todos os dias 26572      50.9          49.9               0.05
+3.0% 3.0%    15 só Ibov > MM200 18332      49.3          48.3              -0.05
+4.0% 5.0%    15   todos os dias 26511      56.1          51.6               0.12
+4.0% 5.0%    15 só Ibov > MM200 18271      54.1          49.2              -0.04
+5.0% 4.0%    15   todos os dias 26516      47.0          40.7               0.13
+5.0% 4.0%    15 só Ibov > MM200 18276      45.3          38.3              -0.04
+5.0% 4.0%    20   todos os dias 26511      46.7          43.2               0.14
+5.0% 4.0%    20 só Ibov > MM200 18271      44.6          40.9              -0.04
+5.5% 2.8%    15   todos os dias 26537      36.9          31.8               0.10
+5.5% 2.8%    15 só Ibov > MM200 18297      35.2          29.6              -0.06
+2.0% 6.0%    15   todos os dias 26553      74.2          73.5               0.09
+2.0% 6.0%    15 só Ibov > MM200 18313      72.6          71.8              -0.01
+
+Leitura: 'acerto' alto com alvo < stop aparece sem nenhum sinal. Só o retorno médio importa,
+e ele precisa ser comparado com esta linha de base, não com zero.
+
+==============================================================================
+B/C. MEAN REVERSION LIGHT (alvo 3% / stop 4% / 15 dias)
+==============================================================================
+                                                   caso  n  acerto_%  ret_medio_%     t
+  indicadores s/ preço ajustado, entrada no(a) abertura  7      42.9        -1.00 -0.71
+indicadores s/ preço ajustado, entrada no(a) fechamento  7      57.1        -0.00 -0.00
+     indicadores s/ preço bruto, entrada no(a) abertura  8      37.5        -1.38 -1.07
+   indicadores s/ preço bruto, entrada no(a) fechamento  8      62.5         0.37  0.28
+
+Por ano (ajustado, entrada na abertura seguinte, bruto de custos):
+            n  acerto  ret_medio  soma
+data_sinal                            
+2021        3     0.0       -4.0 -12.0
+2022        1   100.0        3.0   3.0
+2024        2   100.0        3.0   6.0
+2025        1     0.0       -4.0  -4.0
+  líquido de 0.2% ida-e-volta: ret médio -1.20% por trade
+  líquido de 0.6% ida-e-volta: ret médio -1.60% por trade
+  concentração: 7 trades em 5 meses distintos; os 3 meses mais cheios têm 5 trades
+  dias com sinal no preço bruto: 9; destes, 3 (33%) somem quando o preço é ajustado por proventos
+
+Permutação (5.000 sorteios): entradas aleatórias, mesmo papel, mesmo regime Ibov > MM200
+  observado: -1.00%  |  aleatório: média -0.01%, p5 -2.16%, p95 +2.06%
+  p-valor (aleatório >= observado): 0.804
+
+==============================================================================
+E. ESTUDO DE EVENTO — retorno da abertura de t+1 ao fechamento de t+h,
+   em excesso à média do universo na mesma janela (remove a direção do mercado)
+==============================================================================
+                                       sinal  h  eventos  dias  ret_bruto_%  excesso_%  t_NW  exc_1ª_metade_%  exc_2ª_metade_%
+                        REVERSÃO  RSI14 < 30  1      887   478         0.15      -0.03 -0.39            -0.03            -0.04
+                        REVERSÃO  RSI14 < 30  5      887   477         0.56       0.01  0.03             0.11            -0.06
+                        REVERSÃO  RSI14 < 30 10      887   477         0.70       0.31  0.58             0.54             0.15
+    REVERSÃO  IFR2 < 10 e close > MM200 (E2)  1     1287   648        -0.00      -0.02 -0.38            -0.09             0.03
+    REVERSÃO  IFR2 < 10 e close > MM200 (E2)  5     1287   645        -0.19      -0.35 -2.13            -0.42            -0.30
+    REVERSÃO  IFR2 < 10 e close > MM200 (E2) 10     1287   641        -0.38      -0.39 -1.47            -0.25            -0.49
+                    REVERSÃO  queda 5d < -5%  1     3023   960        -0.07      -0.09 -1.74            -0.04            -0.14
+                    REVERSÃO  queda 5d < -5%  5     3023   957         0.26      -0.10 -0.62             0.27            -0.41
+                    REVERSÃO  queda 5d < -5% 10     3023   952         0.43       0.03  0.10             0.50            -0.37
+        REVERSÃO  close < Bollinger inferior  1     1273   575        -0.11      -0.12 -1.81            -0.20            -0.06
+        REVERSÃO  close < Bollinger inferior  5     1273   572         0.27      -0.02 -0.09             0.03            -0.05
+        REVERSÃO  close < Bollinger inferior 10     1273   572         0.45       0.03  0.09             0.26            -0.13
+                        REVERSÃO  LIGHT (E3)  1        8     6        -1.33      -0.91   NaN             0.78            -2.59
+                        REVERSÃO  LIGHT (E3)  5        8     6        -1.37       0.01   NaN             2.21            -2.19
+                        REVERSÃO  LIGHT (E3) 10        8     6        -0.29       0.32   NaN             1.04            -0.39
+        REVERSÃO  3 piores do universo em 5d  1     3999  1332        -0.14      -0.10 -3.05            -0.14            -0.07
+        REVERSÃO  3 piores do universo em 5d  5     3999  1328        -0.20      -0.32 -3.13            -0.16            -0.43
+        REVERSÃO  3 piores do universo em 5d 10     3999  1323        -0.01      -0.32 -1.69            -0.09            -0.50
+   MOMENTUM  close > Bollinger superior (E2)  1     1636   714         0.08       0.06  0.96             0.08             0.04
+   MOMENTUM  close > Bollinger superior (E2)  5     1636   711         0.38       0.10  0.57             0.28            -0.03
+   MOMENTUM  close > Bollinger superior (E2) 10     1636   708         0.76       0.02  0.09             0.15            -0.07
+MOMENTUM  ret20 > 5%, ADX > 25, Ibov ok (E3)  1     3198   806        -0.05       0.04  0.99            -0.02             0.07
+MOMENTUM  ret20 > 5%, ADX > 25, Ibov ok (E3)  5     3198   802         0.04       0.14  1.12             0.15             0.14
+MOMENTUM  ret20 > 5%, ADX > 25, Ibov ok (E3) 10     3198   797         0.07       0.08  0.31             0.35            -0.08
+  MOMENTUM  tendência: >MM200, >MM20, ADX>25  1     4521  1137        -0.01       0.04  1.21             0.01             0.05
+  MOMENTUM  tendência: >MM200, >MM20, ADX>25  5     4521  1133         0.16       0.10  0.76            -0.11             0.24
+  MOMENTUM  tendência: >MM200, >MM20, ADX>25 10     4521  1128         0.30       0.10  0.40            -0.23             0.33
+      MOMENTUM  3 melhores do universo em 5d  1     3999  1332        -0.02       0.01  0.43             0.02             0.01
+      MOMENTUM  3 melhores do universo em 5d  5     3999  1328         0.17       0.05  0.45             0.13            -0.01
+      MOMENTUM  3 melhores do universo em 5d 10     3999  1323         0.24      -0.07 -0.37            -0.02            -0.11
+  MOMENTUM  3 melhores em ~6 meses (pula 5d)  1     3999  1332        -0.08      -0.05 -1.69            -0.09            -0.02
+  MOMENTUM  3 melhores em ~6 meses (pula 5d)  5     3999  1328        -0.09      -0.20 -1.52            -0.07            -0.30
+  MOMENTUM  3 melhores em ~6 meses (pula 5d) 10     3999  1323        -0.03      -0.35 -1.26            -0.07            -0.56
+    MOMENTUM  3 piores em ~6 meses (pula 5d)  1     3999  1332        -0.09      -0.06 -1.55            -0.06            -0.06
+    MOMENTUM  3 piores em ~6 meses (pula 5d)  5     3999  1328         0.00      -0.11 -0.72            -0.23            -0.03
+    MOMENTUM  3 piores em ~6 meses (pula 5d) 10     3999  1323         0.14      -0.18 -0.61            -0.67             0.18
+
+Metades: até 2023-02-01 / depois. São 12 sinais x 3 horizontes = 36 testes:
+com tantos testes, |t| em torno de 2 aparece por acaso; só interessa t alto E sinal igual nas duas metades.
